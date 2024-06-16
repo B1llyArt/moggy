@@ -57,7 +57,7 @@ body {
     margin-top: 0px; 
     margin-bottom: 0px;
   }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 450px) {
 
   .desc-wrapper p {
     padding-left: 3%; 
@@ -183,13 +183,13 @@ body {
 
 .modal-wrapper {
   background-image: url("./img/mobile-modal.png");
-  background-position: 40%;
+  background-position: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   max-width: 420px;
-  min-height: 700px;
-  max-height: 800px;
+  min-height: 600px;
+  max-height: 700px;
 
   aspect-ratio: 9 / 16;
 
@@ -229,10 +229,10 @@ body {
 
 
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 450px) {
 
-      .modal-wrapper {
-        background-position: 50%;
+      .aboutTxt {
+        margin-top: 0px; padding-left: 8%; padding-right: 7%; margin-right: 14px; color: #bc0041; text-align: left;font-size: 22px;
       }
       
       .track-image-wrapper {
@@ -250,10 +250,22 @@ body {
   
       .close-button {
         position: absolute;
-        top: 9%;
-        right: 2%;
+        top: 4%;
+        right: 3%;
         z-index: 9;
         cursor: pointer;
+        margin-right: 12px;
       }
 
+  }
+
+  @media only screen and (max-width: 400px) {
+    .close-button {
+      position: absolute;
+      top: 4%;
+      right: 2%;
+      z-index: 9;
+      cursor: pointer;
+      margin-right: 0px;
+    }
   }
