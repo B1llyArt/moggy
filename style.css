@@ -232,7 +232,7 @@ body {
     @media only screen and (max-width: 420px) {
 
       .modal-wrapper {
-        background-position: 35%;
+        background-position: 50%;
       }
       .tracktitle {
         padding-top: 6%;
