@@ -186,7 +186,7 @@ body {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-
+min-height: 600px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 420px;
@@ -255,6 +255,6 @@ body {
       }
       .modal-wrapper {
         background-image: url("./img/mobile-modal.png");
-        background-position: 20%;
+    
       }
   }
