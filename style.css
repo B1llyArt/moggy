@@ -183,7 +183,7 @@ body {
 
 .modal-wrapper {
   background-image: url("./img/mobile-modal.png");
-  background-position: 25%;
+  background-position: 40%;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -234,10 +234,6 @@ body {
       .modal-wrapper {
         background-position: 50%;
       }
-      .tracktitle {
-        padding-top: 6%;
-      }
-
       
       .track-image-wrapper {
         position: relative;
