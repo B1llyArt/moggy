@@ -253,8 +253,4 @@ body {
         z-index: 9;
         cursor: pointer;
       }
-      .modal-wrapper {
-        background-image: url("./img/mobile-modal.png");
-        background-position: 20%;
-      }
   }
