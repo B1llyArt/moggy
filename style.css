@@ -186,10 +186,10 @@ body {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 90%;
+
   margin-top: 2rem;
   margin-bottom: 2rem;
-width: 420px;
+  width: 420px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -256,6 +256,5 @@ width: 420px;
       .modal-wrapper {
         background-image: url("./img/mobile-modal.png");
         background-position: 20%;
-        height: 80%;
       }
   }
