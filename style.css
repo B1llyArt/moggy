@@ -179,7 +179,6 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(159, 0, 56, 0.4); /* Fallback color */
-  transition: opacity 0.169s ease-in-out;
 }
 
 .modal-wrapper {
@@ -187,17 +186,14 @@ body {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-height: 90%;
-  min-width: 0;
+  height: 90%;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  max-width: 420px;
+width: 420px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   position: relative;
-  transition: transform 0.42s ease-in-out;
-
   }
 
 
@@ -259,7 +255,7 @@ height: 90%;
       }
       .modal-wrapper {
         background-image: url("./img/mobile-modal.png");
-        background-position: 25%;
+        background-position: 20%;
         height: 80%;
       }
   }
