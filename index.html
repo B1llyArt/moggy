@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>$MOGY</title>
+<meta content="MoggyChan, the first deflationary coin on Memechan" name="description">
+
+<meta content="$MOGY" property="og:title">
+<meta content="MoggyChan, the first deflationary coin on Memechan" name="og:description">
+<meta content="https://cdn.prod.website-files.com/6605fd7b79d796e7b56e939e/66672a3032da6259341c91ab_SPIKE-SITE.png" property="og:image">  <!--Need ipfs link 1200W x 630H --> 
+
+<meta content="$MOGY" property="twitter:title">
+<meta content="MoggyChan, the first deflationary coin on Memechan" name="twitter:description">
+<meta content="https://cdn.prod.website-files.com/6605fd7b79d796e7b56e939e/66672a3032da6259341c91ab_SPIKE-SITE.png" property="twitter:image">  <!--Need ipfs link 1200W x 630H --> 
+
+<meta property="og:type" content="website">
+<meta content="summary_large_image" name="twitter:card">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.prod.website-files.com/6605fd7b79d796e7b56e939e/660dbe916c809e69db6df1c6_spike%20favicon.png" rel="shortcut icon" type="image/x-icon"> <!--Need ipfs link 32 x 32 --> 
+<link href="https://cdn.prod.website-files.com/6605fd7b79d796e7b56e939e/660dbeb465e62a2a09199f47_spike%20pfp%20-%20homescreen.png" rel="apple-touch-icon"> <!--Need ipfs link 256 x 256 Same img as favicon --> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+    <div class="body-container">
+        <div class="title-wrapper">
+            <img src="./img/title-mog.png" loading="lazy" alt="">
+        </div>
+
+        <div class="character-wrapper">
+            <img src="./img/moggy-mog.png" loading="lazy" alt="">
+        </div>
+
+        <div class="desc-wrapper">
+            <p style="color: #bc0041; text-align: center ;font-size: 32px;">The first deflationary coin on <a href="https://solana.memechan.gg/" rel="noopener noreferrer" target="_blank" style="text-decoration: none; color: #bc0041;" >Memechan</a></p>
+        </div>
+        <button class="buttons-wrapper btn button-btn">
+            <img src="./img/adventure-mog.png" loading="lazy" alt="">
+        </button>
+        <button class="buttons-wrapper btn button-btn" onclick="showBuy()">
+            <img src="./img/buy-mog.png" loading="lazy" alt="">
+        </button>
+
+        <div class="button-row">
+            <button class="button-column btn button-btn" onclick="showAbout()">
+              <img src="./img/whats-mog.png" loading="lazy" alt="">
+            </button>
+            <button class="button-column btn button-btn" onclick="showChart()">
+              <img src="./img/charts-mog.png" loading="lazy" alt="">
+            </button>
+        </div>
+    <div class="ca-row">
+        <div class="ca-column one">
+            <a href="https://solscan.io/token/4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47" rel="noopener noreferrer" target="_blank"> <!--Need to double check this -->
+                <img src="./img/ca-bg.png" class="footimage">
+            </a>
+        </div>
+        <div class="ca-column btn two" >
+            <button class="button-btn" onclick="copyca()"><img src="./img/copy-mog.png"></button>
+        </div>
+    </div>
+
+
+    <div class="footnav">
+        <div class="footimage-wrapper btn">
+            <a href="https://x.com/ChanMoggy" rel="noopener noreferrer" target="_blank">
+                <img src="./img/twitter-footer.png" class="footimage">
+            </a>
+        </div>
+        <div class="footimage-wrapper btn">
+            <a href="https://dexscreener.com/solana/b4kami9wukzr2mpeta3odkgitpk98tomncyfmsjazgjc" rel="noopener noreferrer" target="_blank"> 
+                <img src="./img/dex-footer.png" class="footimage">
+            </a>
+        </div>
+        <div class="footimage-wrapper btn">
+            <a href="https://t.me/moggychan" rel="noopener noreferrer" target="_blank">
+                <img src="./img/tele-footer.png" class="footimage">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="modal" id="chartsModal" style="display: none;">
+
+        <div class="modal-wrapper" id="chartsWrapper" style="display: none;">
+            <div class="title-wrapper tracktitle">
+                <img src="./img/track-title.png" loading="lazy" alt="" style="max-width: 90%;">
+            </div>
+            <button class="button-btn close-button"onclick="closeChart()"><img src="./img/close-select.png" style="width: 44%;"></button>
+            <div class="track-row">
+                <div class="track-image-wrapper btn">
+                    <a href="https://solana.memechan.gg/coin/4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/track-memechan.png" class="track-image">
+                    </a>
+                </div>
+
+                <div class="track-image-wrapper btn">
+                    <a href="https://dexscreener.com/solana/b4kami9wukzr2mpeta3odkgitpk98tomncyfmsjazgjc" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/track-dexscreener.png" class="track-image">
+                    </a>
+                </div>
+             
+            </div> 
+            <div class="track-row">
+                <div class="track-image-wrapper btn">
+                    <a href="https://www.dextools.io/app/en/solana/pair-explorer/B4KaMi9wUKzR2mPETa3odkGiTpK98ToMNCyFMSJAZgjC?t=1718549761123" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/track-dextools.png" class="track-image">
+                    </a>
+                </div>
+
+                <div class="track-image-wrapper btn">
+                    <a href="https://birdeye.so/token/4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47/B4KaMi9wUKzR2mPETa3odkGiTpK98ToMNCyFMSJAZgjC?chain=solana" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/track-birdeye.png" class="track-image">
+                    </a>
+                </div>
+             
+            </div> 
+        </div>
+         
+    </div>
+
+    <div class="modal" id="buyModal" style="display: none;">
+        <div class="modal-wrapper" id="buyWrapper" style="display: none;">
+            <div class="title-wrapper tracktitle">
+                <img src="./img/buy-title.png" loading="lazy" alt="" style="max-width: 90%;">
+            </div>
+            <button class="button-btn close-button"onclick="closeBuy()"><img src="./img/close-select.png" style="width: 44%;"></button>
+            <div class="track-row">
+                <div class="track-image-wrapper btn">
+                    <a href="https://solana.memechan.gg/coin/4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/track-memechan.png" class="track-image">
+                    </a>
+                </div>
+            </div>
+            <div class="track-row">
+                <div class="track-image-wrapper btn">
+                    <a href="https://jup.ag/swap/SLERF-4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/buy-jupiter.png" class="track-image">
+                    </a>
+                </div>
+                <div class="track-image-wrapper btn">
+                    <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=RUpbmGF6p42AAeN1QvhFReZejQry1cLkE1PUYFVVpnL&outputSymbol=RUpbmG&fixed=in&inputMint=7BgBvyjrZX1YKz4oh9mjb8ZScatkkwb8DzFx7LoiVkM3&outputMint=4erbFdFSmJe8QMgUozgZY1W3cBdEWXMdYfQHi2AqYG47" rel="noopener noreferrer" target="_blank">
+                        <img src="./img/buy-raydium.png" class="track-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="aboutModal" style="display: none;">
+        <div class="modal-wrapper" id="aboutWrapper" style="display: none;">
+            <div class="title-wrapper tracktitle">
+                <img src="./img/about-title.png" loading="lazy" alt="" style="max-width: 90%;">
+            </div>
+            <button class="button-btn close-button"onclick="closeAbout()"><img src="./img/close-select.png" style="width: 44%;"></button>
+            <p class="aboutTxt">Moggychan is Memechan's pet cat that ran away from home, saddened by the millions of pats Memechan received while Moggychan received not a single one.</p>
+            <p class="aboutTxt">Join MOGY on his adventure as a memecoin in search of the bonding he desires. Perhaps one day, they can reunite...</p>
+        </div>
+    </div>
+</body>
+</html>

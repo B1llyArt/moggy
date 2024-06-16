@@ -1,0 +1,263 @@
+@font-face {
+    font-family: moggy;
+    src: url(./fonts/Animated.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: moggy;
+  }
+body {
+    margin: 0;
+    background-color: #f7b4c7;
+  }
+
+  .body-container {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    min-height: 99vh;
+    height: 100%;
+  
+    position: relative;
+  }
+
+
+  .title-wrapper {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+
+  }
+
+  .title-wrapper img {
+    width: 100%;
+
+  }
+
+  .character-wrapper {
+    width: 100%;
+    margin-top: -19%;
+    z-index: 0;
+    position: relative;
+  }
+  .character-wrapper img {
+    width: 100%;
+
+  }
+
+  .desc-wrapper p {
+    padding-left: 12%; 
+    padding-right: 12%; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+  }
+  @media all and (max-width: 420px) {
+
+  .desc-wrapper p {
+    padding-left: 3%; 
+    padding-right: 3%; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+  }
+  }
+
+
+  .buttons-wrapper {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  .buttons-wrapper img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+
+
+  .button-column {
+    float: left;
+    width: 50%;
+  }
+
+  .button-column img {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .button-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .btn img {
+    will-change: transform;
+    transition: transform 420ms;
+  }
+
+  .btn:hover img {
+    transition: transform 150ms;
+    transform: translateY(-10px);
+  }
+
+
+
+  .ca-column {
+    float: left;
+    
+  }
+  .one {
+    width: 86%;
+  }
+  .two {
+    width: 14%
+  }
+
+  .ca-row {
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  .ca-column img {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  .ca-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.button-btn {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+  .footnav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    position: relative;
+  }
+  /* container to house both nav images */
+  .footimage-wrapper {
+    position: relative;
+    width: 64px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  /* the initial image */
+  .footimage {
+    height:64px;
+  }
+  
+
+
+/* Background */
+.modal {
+
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(159, 0, 56, 0.4); /* Fallback color */
+  transition: opacity 0.169s ease-in-out;
+}
+
+.modal-wrapper {
+  background-image: url("./img/mobile-modal.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-width: 0;
+  height: 90%;
+
+  max-height: 900px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  transition: transform 0.42s ease-in-out;
+
+  }
+
+
+    .track-image-wrapper {
+      position: relative;
+      width: 128px;
+      display: inline-block;
+
+    }
+    /* the initial image */
+    .track-image {
+      height:128px;
+      cursor: pointer;
+    }
+    
+
+    .close-button {
+      position: absolute;
+      top: 5%;
+      right: 2%;
+      z-index: 9;
+      cursor: pointer;
+    }
+
+
+    .aboutTxt {
+      margin-top: 0px; padding-left: 8%; padding-right: 7%; color: #bc0041; text-align: left;font-size: 24px;
+    }
+
+
+
+
+    @media all and (max-width: 420px) {
+
+      .tracktitle {
+        padding-top: 12%;
+      }
+
+      
+      .track-image-wrapper {
+        position: relative;
+        width: 96px;
+        display: inline-block;
+  
+      }
+      /* the initial image */
+      .track-image {
+        height:96px;
+        cursor: pointer;
+      }
+      
+  
+      .close-button {
+        position: absolute;
+        top: 9%;
+        right: -1%;
+        z-index: 9;
+        cursor: pointer;
+      }
+      }
