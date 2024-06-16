@@ -183,19 +183,16 @@ body {
 
 .modal-wrapper {
   background-image: url("./img/mobile-modal.png");
-  background-position: 50%;
+  background-position: 20%;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   max-width: 420px;
-  min-width: 0;
-  height: 90%;
-  min-height: 800px;
-  max-height: 900px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  min-height: 700px;
+  max-height: 800px;
 
-  
+  aspect-ratio: 9 / 16;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
