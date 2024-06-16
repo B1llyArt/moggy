@@ -237,13 +237,13 @@ body {
       
       .track-image-wrapper {
         position: relative;
-        width: 96px;
+        width: 128px;
         display: inline-block;
   
       }
       /* the initial image */
       .track-image {
-        height:96px;
+        height:128px;
         cursor: pointer;
       }
       
