@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #f7b4c7;
+}
+.body-cont {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background-color: #f7b4c7;
+}
+
+
+
+/* Book */
+.book {
+    position: relative;
+    width: 39%;
+    height: 39%;
+
+    min-width: 396px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    background-color: #f7b4c7;
+    height: 100%;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    max-width: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 0.5s;
+    
+
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Paper stack order */
+#p1 {
+    z-index: 9;
+}
+
+#p2 {
+    z-index: 8;
+}
+
+#p3 {
+    z-index: 7;
+}
+#p4 {
+    z-index: 6;
+}
+#p5 {
+    z-index: 5;
+}
+#p6 {
+    z-index: 4;
+}
+#p7 {
+    z-index: 3;
+}
+#p8 {
+    z-index: 2;
+}
+#p9 {
+    z-index: 1;
+}
+
+
+img {
+    object-fit: contain;
+}
+
+.button-row {
+width: 25%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+
+
+
+}
+
+.button-column {
+    float: left;
+    width: 50%;
+  }
+
+  .button-column img {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+  }
+  .button-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .btn img {
+    will-change: transform;
+    transition: transform 420ms;
+    width: 100%;
+  }
+
+  .btn:hover img {
+    transition: transform 150ms;
+    transform: translateY(-10px);
+  }
+
+
+
+  .mob-img {
+    width: 100%;
+    margin: 12px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+
+
+  @media screen and (max-device-width: 690px) {
+    .mob-img {
+      display: flex;
+    }
+    .body-cont, .button-row {
+      display: none;
+    }
+  }
+
+  @media screen and (min-device-width: 689px) {
+
+    .mob-img {
+        display: none;
+      }
+      .body-cont, .button-row {
+        display: flex;
+      }
+    }
+
+  
+
